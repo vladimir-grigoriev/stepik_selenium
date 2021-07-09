@@ -8,7 +8,7 @@ try:
     browser = webdriver.Chrome()
     browser.get("http://suninjuly.github.io/find_link_text")
 
-    my_string = str(math.ceil(math.pow(math.pi, math.e)*10000))
+    my_string = str(math.ceil(math.pow(math.pi, math.e) * 10000))
     link = browser.find_element_by_link_text(my_string)
     link.click()
     input1 = browser.find_element_by_name("first_name")
@@ -21,8 +21,7 @@ try:
     input4.send_keys("Belarus")
     btn = browser.find_element_by_tag_name("button.btn.btn-default")
     btn.click()
-    
-    
+
 
 finally:
     i = input(">>> Press Enter to escape ")
